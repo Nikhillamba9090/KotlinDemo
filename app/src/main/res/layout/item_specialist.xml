@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="@dimen/dp3"
+        android:layout_margin="@dimen/dp5">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/doc_image"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp120"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_user"
+                android:background="#80029D9F"/>
+
+            <TextView
+                android:id="@+id/doc_name"
+                android:layout_toRightOf="@id/doc_image"
+                android:layout_toEndOf="@id/doc_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:text="Doc Name"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginStart="@dimen/dp5"
+                style="@style/appTextStyle"
+                android:layout_marginTop="@dimen/dp2"/>
+
+            <TextView
+                android:id="@+id/doc_profession"
+                android:layout_alignLeft="@id/doc_name"
+                android:layout_alignStart="@id/doc_name"
+                android:layout_below="@id/doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:text="Doc Profession"
+                android:maxLines="2"
+                android:textColor="@color/dullBlack"
+                style="@style/appTextStyle"/>
+
+            <TextView
+                android:id="@+id/doc_available_timing"
+                android:layout_alignLeft="@id/doc_name"
+                android:layout_alignStart="@id/doc_name"
+                android:layout_below="@id/doc_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:text="Next Available 12:20 AM"
+                android:textColor="@color/dullBlack"
+                style="@style/appTextStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginBottom="@dimen/dp4"
+                android:layout_alignLeft="@id/doc_name"
+                android:layout_alignStart="@id/doc_name"
+                android:layout_alignParentBottom="true">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp2"
+                        android:layout_marginEnd="@dimen/dp2"
+                        android:textSize="@dimen/sp10"
+                        android:text="Ask Question"
+                        android:textColor="@drawable/sp_text_pressed_blue"
+                        android:gravity="center"
+                        android:background="@drawable/sp_blue_stroke_rectangle"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp2"
+                        android:layout_marginStart="@dimen/dp2"
+                        android:layout_marginRight="@dimen/dp4"
+                        android:layout_marginEnd="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="Book Appointment"
+                        android:gravity="center"
+                        android:textSize="@dimen/dp10"
+                        android:background="@drawable/sp_blue_pressed5dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

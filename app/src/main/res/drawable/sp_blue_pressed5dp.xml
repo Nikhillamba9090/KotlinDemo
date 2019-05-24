@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="@dimen/dp5"/>
+            <solid android:color="@color/blueButtonPressed"/>
+
+        </shape></item> <!-- pressed -->
+    <item android:state_focused="true">
+
+        <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="@dimen/dp5"/>
+            <solid android:color="@color/blueButtonPressed"/>
+        </shape>
+    </item> <!-- focused -->
+    <item >
+        <shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="@dimen/dp5"/>
+            <solid android:color="@color/blueButton"/>
+        </shape>
+    </item> <!-- default -->
+</selector>

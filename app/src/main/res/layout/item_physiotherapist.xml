@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp5"
+        app:cardCornerRadius="@dimen/dp8">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp5">
+            <ImageView
+                android:id="@+id/therapist_image"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder_user"
+                android:background="#80029D9F"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/therapist_image">
+                <TextView
+                    android:id="@+id/doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp15"
+                    android:text="Doc Name"
+                    android:textColor="@color/bluePrimary"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginStart="@dimen/dp5"
+                    style="@style/appTextStyle"
+                    android:layout_marginTop="@dimen/dp2"/>
+
+                <TextView
+                    android:id="@+id/doc_profession"
+                    android:layout_alignLeft="@id/doc_name"
+                    android:layout_alignStart="@id/doc_name"
+                    android:layout_below="@id/doc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp13"
+                    android:text="Doc Profession"
+                    android:maxLines="2"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:textColor="@color/black"
+                    style="@style/appTextStyle"/>
+
+                <TextView
+                    android:id="@+id/doc_available_timing"
+                    android:layout_alignLeft="@id/doc_name"
+                    android:layout_alignStart="@id/doc_name"
+                    android:layout_below="@id/doc_profession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp13"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:text="Next Available 12:20 AM"
+                    android:textColor="@color/bluePrimary"
+                    style="@style/appTextStyle"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

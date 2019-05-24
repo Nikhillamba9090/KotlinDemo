@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp4"
+        android:layout_marginStart="@dimen/dp4"
+        android:layout_marginRight="@dimen/dp4"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/dp4">
+
+        <TextView
+            android:id="@+id/option_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Service"
+            android:textSize="@dimen/sp16"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp12"
+            android:paddingStart="@dimen/dp12"
+            android:paddingRight="@dimen/dp12"
+            android:paddingEnd="@dimen/dp12"
+            android:background="@drawable/sp_service_detail_options"
+            android:textColor="@color/dullBlack"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

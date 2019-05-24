@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--<item name="android:windowBackground">@drawable/splash_grey</item>-->
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/bluePrimary
+        </item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="AppThemeLoginSignup" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+        <!--<item name="android:windowBackground">@drawable/main_bg</item>-->
+    </style>
+
+    <style name="AppThemeFinal" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="appTextStyle">
+        <!--<item name="android:fontFamily">@font/open_sans</item>-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item><!--
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/c_black</item>
+        <item name="android:textColorHint">@color/c_black</item>
+-->
+    </style>
+
+    <style name="appTextStyleSemiBold">
+        <!--<item name="android:fontFamily">@font/open_sans_semibold</item>-->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <declare-styleable name="LoopingViewPager">
+        <attr name="isInfinite" format="boolean" />
+        <attr name="autoScroll" format="boolean" />
+        <attr name="wrap_content" format="boolean" />
+        <attr name="scrollInterval" format="integer" />
+        <attr name="viewpagerAspectRatio" format="float" />
+    </declare-styleable>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

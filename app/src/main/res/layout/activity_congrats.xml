@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/congrats_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/appTextStyle"
+            android:textSize="@dimen/sp22"
+            android:layout_centerHorizontal="true"
+            android:text="@string/congratulations"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/label_registered"
+            android:layout_below="@id/congrats_label"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/appTextStyle"
+            android:textSize="@dimen/sp16"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/successfully_registered"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/label_id"
+            android:layout_below="@id/label_registered"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/appTextStyle"
+            android:textSize="@dimen/sp16"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/your_patient_id"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/patient_id_tv"
+            android:layout_below="@id/label_id"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/appTextStyle"
+            android:textSize="@dimen/sp16"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="123456"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_below="@id/patient_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp50"
+            android:layout_marginBottom="@dimen/dp40"
+            android:background="@drawable/sp_blue_button25radius"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            style="@style/appTextStyle"
+            android:textSize="@dimen/sp16"
+            android:text="@string/home"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

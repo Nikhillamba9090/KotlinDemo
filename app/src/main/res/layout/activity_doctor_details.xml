@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/top_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp220"
+            android:src="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_centerVertical="true" />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/header_layout">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/user_card"
+                android:layout_width="@dimen/dp90"
+                android:layout_height="@dimen/dp90"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="@dimen/dp20"></androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/doc_name"
+                android:layout_below="@id/user_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp15"
+                android:text="Doc Name"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                style="@style/appTextStyle"
+                android:layout_marginTop="@dimen/dp2"/>
+
+            <TextView
+                android:id="@+id/doc_profession"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp13"
+                android:text="Doc Profession"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                style="@style/appTextStyle"/>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/experience_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_relative_layout"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginStart="@dimen/dp5">
+
+    <ImageView
+        android:id="@+id/exp_image"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        />
+    <TextView
+        android:layout_toRightOf="@id/exp_image"
+        android:layout_toEndOf="@id/exp_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="15 years expirence"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/available_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/experience_layout"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginStart="@dimen/dp5">
+
+        <ImageView
+            android:id="@+id/available_image"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            />
+        <TextView
+            android:layout_toRightOf="@id/available_image"
+            android:layout_toEndOf="@id/available_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="15 years expirence"
+            android:textSize="@dimen/sp14"
+            android:textColor="@color/bluePrimary"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/doc_full_name"
+        android:layout_below="@id/available_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp18"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginStart="@dimen/dp5"
+        android:text="Doc Name"
+        android:textColor="@color/black"
+        style="@style/appTextStyle"
+        android:layout_marginTop="@dimen/dp2"/>
+
+</RelativeLayout>

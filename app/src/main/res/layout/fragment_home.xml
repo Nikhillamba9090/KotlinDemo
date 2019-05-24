@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <RelativeLayout
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp60">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp20"
+                    android:text="@string/full_name"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp10"
+                    style="@style/appTextStyleSemiBold"/>
+
+                <TextView
+                    android:id="@+id/welcome_label"
+                    android:layout_below="@id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:text="@string/welcome_to_demoktx_active"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp10"
+                    style="@style/appTextStyle"/>
+
+
+
+            </RelativeLayout>
+
+            <app.demoktx.carousel.LoopingViewPager
+                android:id="@+id/loop_view_pager"
+                android:layout_below="@id/header_layout"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="@dimen/dp10"
+                app:isInfinite="true"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:id="@+id/looking_or_label"
+                android:layout_below="@id/loop_view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp16"
+                android:text="@string/what_you_are_looking_for"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginStart="@dimen/dp10"
+                style="@style/appTextStyleSemiBold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/services_recycler"
+                android:layout_below="@id/looking_or_label"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp10"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/book_specialist_label"
+                android:layout_below="@id/services_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp16"
+                android:text="@string/book_specialist"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginStart="@dimen/dp10"
+                style="@style/appTextStyleSemiBold"/>
+
+            <TextView
+                android:id="@+id/all_tv"
+                android:layout_below="@id/services_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp16"
+                android:text="All"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_marginEnd="@dimen/dp8"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp10"
+                style="@style/appTextStyleSemiBold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/specialist_recycler"
+                android:layout_below="@id/book_specialist_label"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

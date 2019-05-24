@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/dp4">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginEnd="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8">
+
+            <ImageView
+                android:id="@+id/package_icon"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_centerVertical="true"
+                android:src="@drawable/facebook"/>
+
+            <TextView
+                android:layout_toRightOf="@id/package_icon"
+                android:layout_toEndOf="@id/package_icon"
+                android:layout_marginLeft="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp8"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package Price   : 3000"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16"
+                style="@style/appTextStyle"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

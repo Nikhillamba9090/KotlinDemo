@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.ProgramDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp220"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/bluePrimary"
+                android:layout_marginBottom="@dimen/sp20"
+                android:scaleType="fitXY"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sp20"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginEnd="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15">
+
+            <TextView
+                android:id="@+id/about_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About the program"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/black"
+                style="@style/appTextStyleSemiBold"/>
+
+            <TextView
+                android:id="@+id/about_desc"
+                android:layout_below="@id/about_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/black"
+                style="@style/appTextStyle"
+                android:layout_marginTop="@dimen/dp4"/>
+
+            <TextView
+                android:id="@+id/do_label"
+                android:layout_below="@id/about_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What will you do in this program?"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp10"
+                style="@style/appTextStyleSemiBold"/>
+
+            <TextView
+                android:id="@+id/to_do_list"
+                android:layout_below="@id/do_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/black"
+                style="@style/appTextStyle"
+                android:layout_marginTop="@dimen/dp10"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="bottom"
+        android:background="@color/bluePrimary">
+        <ImageView
+            android:id="@+id/forward_arrow"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/book_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/forward_arrow"
+            android:layout_toStartOf="@id/forward_arrow"
+            android:textSize="@dimen/sp16"
+            android:textColor="@color/white"
+            style="@style/appTextStyle"/>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

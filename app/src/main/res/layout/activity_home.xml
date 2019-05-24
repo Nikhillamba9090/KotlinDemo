@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            style="@style/Widget.AppCompat.ListPopupWindow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_alignParentBottom="true"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            android:layout_alignParentBottom="true"
+            android:animateLayoutChanges="true"
+            android:layout_marginBottom="@dimen/dp5">
+
+            <LinearLayout
+                android:id="@+id/li_tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_icon_w"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@color/bluePrimary"
+                    android:padding="@dimen/dp5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp10"
+                    android:text="@string/appointments"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dullBlack"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_icon_w"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@color/bluePrimary"
+                    android:padding="@dimen/tab_icon_padding_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp10"
+                    android:text="@string/consultations"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dullBlack"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_tab3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_icon_w"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@color/bluePressed"
+                    android:padding="@dimen/tab_icon_padding_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp10"
+                    android:text="@string/home"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dullBlack"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/li_tab4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_icon_w"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@color/bluePrimary"
+                    android:padding="@dimen/tab_icon_padding_5" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp10"
+                    android:text="@string/health_tips"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dullBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/li_tab5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_tab_icon_w"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@color/bluePrimary"
+                    android:padding="@dimen/tab_icon_padding_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp10"
+                    android:text="@string/profile"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dullBlack"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@id/bottom_layout">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp3">
+
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</RelativeLayout>
